@@ -1,1 +1,31 @@
-#Stra
+#start
+print("Selamat Datang di Python Pizza")
+print("Disini kami menawarkan beberapa varian topping Python Pizza yakni:")
+print("frankfurter")
+print("meat monsta")
+print("super supreme")
+print("super supreme chicken")
+#pelanggan memilih topping pizza
+def topping(HargaPizza):
+    ToppingPizza = input ("Tulis topping kesukaan anda ya! ")
+    if (ToppingPizza == "frankfurter"):
+        print ("Harga pizza dengan topping ini adalah = Rp. 43.637")
+        HargaPizza += 43637
+    elif (ToppingPizza == "meat monsta"):
+        print ("Harga pizza dengan topping ini adalah = Rp. 43.637")
+        HargaPizza += 43637
+    elif (ToppingPizza == "super supreme"):
+        print ("Harga pizza dengan topping ini adalah = Rp. 43.637")
+        HargaPizza += 43637
+    elif (ToppingPizza == "super supreme chicken"):
+        print ("Harga pizza dengan topping ini adalah = Rp. 43.637")
+        HargaPizza += 43637
+    else :
+        print ("Maaf yang anda tulis tidak ada di menu, coba tulis menu kembali! ")
+        HargaPizza += 0
+    return HargaPizza
+HargaPizza = 0 
+
+while HargaPizza < 1 :
+    HargaPizza = topping(HargaPizza)
+print ('sudah')

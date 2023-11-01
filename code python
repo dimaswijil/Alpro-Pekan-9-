@@ -1,28 +1,38 @@
 #start program
+print("______________________________________________________________")
 print ("Selamat Datang di Python Pizza")
-#pelanggan memilih topping pizza
-print("Disini kami memiliki beberapa varian toping yakni:")
-print("1. Frankfurter")
-print("2. Meat monsta")
-print("3. Super supreme")
-print("4. Super supreme chicken")
-ToppingPizza = input ("Pilih topping kesukaan anda? ")
-HargaPizza = 0 ;
-#setelah memilih menu maka
-if (ToppingPizza == "frankfurter"):
-    print ("harga pizza dengan topping ini = Rp. 43.636")
-    HargaPizza += 43636
-elif (ToppingPizza == "meat monsta"):
-    print ("harga pizza dengan topping ini adalah = Rp. 43.636")
-    HargaPizza += 43636
-elif (ToppingPizza == "super supreme"):
-    print ("harga pizza dengan topping ini adalah = Rp. 43.636")
-    HargaPizza += 43636
-elif (ToppingPizza == "super supreme chicken"):
-    print ("harga pizza dengan topping ini adalah = Rp. 43.636")
-    HargaPizza += 43636
-else :
-    print ("tidak ada pilihan")
+print("Disini kami menawarkan beberapa varian topping Python Pizza yakni:")
+print("______________________________________________________________")
+print("frankfurter")
+print("meat monsta")
+print("super supreme")
+print("super supreme chicken")
+print("______________________________________________________________")
+
+#memilih menu maka
+def topping(HargaPizza):
+    ToppingPizza = input ("Pilih topping kesukaan anda ya! ")
+    if (ToppingPizza == "frankfurter"):
+        print ("harga pizza dengan topping ini = Rp. 43.636")
+        HargaPizza += 43636
+    elif (ToppingPizza == "meat monsta"):
+        print ("harga pizza dengan topping ini adalah = Rp. 43.636")
+        HargaPizza += 43636
+    elif (ToppingPizza == "super supreme"):
+        print ("harga pizza dengan topping ini adalah = Rp. 43.636")
+        HargaPizza += 43636
+    elif (ToppingPizza == "super supreme chicken"):
+        print ("harga pizza dengan topping ini adalah = Rp. 43.636")
+        HargaPizza += 43636
+    else :
+        print ("Maaf yang anda tulis tidak ada di menu, coba tulis menu kembali! ")
+        HargaPizza += 0
+    return HargaPizza
+HargaPizza = 0 
+
+while HargaPizza < 1 :
+    HargaPizza = topping(HargaPizza)
+
 #pemilihan crust dan ukuran pizza    
 print ("silahkan pilih crust")
 print ("1.pan")

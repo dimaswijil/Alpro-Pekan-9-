@@ -106,3 +106,53 @@ elif (crustPizza == "cheesy bites"):
     print ("1.personal")
     print ("2.reguler")
     print ("3.large")
+ukuranPizza = input("pilih ukuran pizza: ")
+    hargaUkuran = 0 ;
+    ukuranPizza = ukuranPizza.lower()
+    if (ukuranPizza == "personal"):
+        hargaUkuran += hargaCrust + 0
+    elif (ukuranPizza == "reguler"):
+        hargaUkuran += hargaCrust + 66364
+    elif (ukuranPizza == "large"):
+        hargaUkuran += hargaCrust + 107273
+    else:
+        print ("tidak ada pilihan")
+
+elif (crustPizza == "crown crust"):
+    print ("harga pizza dengan crust ini adalah rp 55.454")
+    hargaCrust = HargaPizza + 11818
+    print ("silahkan pilih ukuran")
+    print ("1.personal")
+    print ("2.reguler")
+    print ("3.large")
+    ukuranPizza = input("pilih ukuran pizza: ")
+    hargaUkuran = 0 ;
+    ukuranPizza = ukuranPizza.lower()
+    if (ukuranPizza == "personal"):
+        hargaUkuran += hargaCrust + 0
+    elif (ukuranPizza == "reguler"):
+        hargaUkuran += hargaCrust + 65455
+    elif (ukuranPizza == "large"):
+        hargaUkuran += hargaCrust + 104545
+    else:
+        print ("tidak ada pilihan")
+else:
+    print ("tidak ada pilihan")
+
+if (ukuranPizza == "personal"):
+    extraCheese = 13636
+elif (ukuranPizza == "reguler"):
+    extraCheese = 16364
+elif (ukuranPizza == "large"):
+    extraCheese =  19091
+else:
+    print("tidak ada dipilih")
+
+extra = input(f"extracheese? +Rp. {extraCheese} y/n: ")
+if extra == "y":
+    hargatotal = hargaUkuran + extraCheese
+elif extra == "n":
+    hargatotal = hargaUkuran
+else:
+    print ("tidak ada yang dipilih")
+print (f"total pesanan anda adalah :Rp. {str(hargatotal)}")

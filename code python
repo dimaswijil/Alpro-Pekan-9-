@@ -51,7 +51,7 @@ if (crustPizza == "pan"):
     print ("3.large")    
     ukuranPizza = input("pilih ukuran pizza: ")
     hargaUkuran = 0 ;
-       ukuranPizza = ukuranPizza.lower()
+    ukuranPizza = ukuranPizza.lower()
     if (ukuranPizza == "personal"):
         hargaUkuran += hargaCrust + 0
     elif (ukuranPizza == "reguler"):
@@ -106,7 +106,7 @@ elif (crustPizza == "cheesy bites"):
     print ("1.personal")
     print ("2.reguler")
     print ("3.large")
-ukuranPizza = input("pilih ukuran pizza: ")
+    ukuranPizza = input("pilih ukuran pizza: ")
     hargaUkuran = 0 ;
     ukuranPizza = ukuranPizza.lower()
     if (ukuranPizza == "personal"):
